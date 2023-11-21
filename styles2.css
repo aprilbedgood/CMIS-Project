@@ -1,0 +1,161 @@
+@charset "utf-8";
+/*
+   sample start file for final project - educational use only
+   
+   Author:   April Bedgood
+   Date:     11-20-2023
+   
+  
+
+*/
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif, Calisto;
+	background-color: 	Black;
+}
+
+#container {
+    width: 900px;
+    margin:auto;
+    background-color: Black;
+}
+
+
+header {
+    width:910px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: left;
+	background-color: 		#C0C0C0;
+    border: 1px solid #888888;
+    box-shadow: 10px 10px 2.5px#40E0D0;
+    border-radius: 25px;  	
+}
+
+nav {
+    width: 200px;
+    margin: 0 5px 0 5px; 
+    padding: 25px 10px 0 10px;
+    float: right;
+    text-align: right;
+}
+
+nav ul {
+    font-weight: bold;
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 5px;
+    color: Black;
+    text-decoration: none;
+    display:block;
+}
+
+nav ul li a:hover {
+    background: #40E0D0;
+    border-radius: 10px;
+    color: white;
+}
+
+#profile {
+    width: 446px;
+    padding: 10px;
+	float: left;
+	background-color: White;
+ 
+}
+
+#profile p {
+	color: Black;
+	text-align: center;
+	margin: 5px 5px 5px 5px;
+}
+
+h1{
+	font-family: Arial;
+	font-size: 2em;
+	color:#40E0D0;
+	text-align: center;
+	margin: 30px 0px 5px 0px;
+}
+h2{
+	font-family: Arial;
+	font-size: 2em;
+	color:#40E0D0;
+	text-align: center;
+	margin: 30px 0px 10px 0px;
+}
+h3{
+	font-family: Arial;
+	font-size: 2em;
+	color:#40E0D0;
+	text-align: center;
+	margin: 30px 0px 10px 0px;
+}
+#videos/pictures {
+	float: center;
+}
+figure img{
+    padding-top: 10px;
+	float: left;
+	float: up -500px
+}
+
+figcaption {
+    font-style: italic;
+	color:#40E0D0;
+	text-align: center;
+	font-size: 1em;
+}
+video {
+	height: 320px;
+	width: 250px;
+	border-radius:	75%;
+	border-width: 10px;
+	border-color: #DAA520;
+	position: right;
+	overflow: hidden;
+    padding-top: 10px;
+	float: left;
+}
+
+footer {
+    width: 910px;
+    margin: 0;
+    padding: 10px;
+    background-color: #40E0D0;
+    clear: both;
+    color: white;
+    font-weight: bold;
+    text-align:center;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#wrapper {
+    width: 930px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-radius: 25px;
+}/* navigation for footer */
+footer a:link {
+    color: #DAA520;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: navy;
+    background-color: grey;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
