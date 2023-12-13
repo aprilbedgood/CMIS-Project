@@ -1,13 +1,63 @@
-@charset "utf-8";
-/*
-   sample start file for final project - educational use only
-   
-   Author:   April Bedgood
-   Date:     11-20-2023
-   
-  
+* {
+    margin: 0; 
+    padding: 0;
+}
 
-*/
+body {
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
+}
+
+#container {
+    width: 950px;
+    background-color: white;
+}
+
+
+header {
+    width: 950px;
+	height: 220px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border: 5px dotted black;
+    border-radius: 25px;  	
+}
+
+header img {
+  width: 700px;
+  height: 200px;
+  object-fit: contain;
+  display:flex;
+  justify-content: flex-start;
+  margin: 10px 5px 10px 15px;
+}
+
+header nav {
+	float: right;
+    width: 200px;
+	margin: -180px 10px 10px 0px;
+    text-align: right;
+	font-size: 1.25em;
+}
+
+header nav ul {
+    font-weight: bold;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 5px;
+    color: Black;
+    text-decoration: none;
+    display:block;
+}
+
+header nav ul li a:hover {
+    background: #9FE2BF;
+    border-radius: 10px;
+    color: white;
+}
 
 * {
     margin: 0; 
@@ -16,78 +66,64 @@
 
 body {
     font-size: 1.1em;
-    font-family: Arial, Helvetica, sans-serif, Calisto;
-	background-color: 	Black;
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
 }
 
 #container {
-    width: 1000px;
-    margin:auto;
-    background-color:Black;
+    width: 950px;
+    margin: 0 auto;
+    background-color: white;
 }
+
 
 header {
-    width:1000px;
-    margin-bottom: 30px;
+    width: 950px;
+	height: 220px;
+    margin-bottom: 15px;
     margin-top: 10px;
-    text-align: left;
-	background-color: 		#C0C0C0;
+    border: 5px dotted black;
+    border-radius: 25px;  	
 }
 
-nav {
-	height: 250px;
+header img {
+  width: 700px;
+  height: 200px;
+  object-fit: contain;
+  display:flex;
+  justify-content: flex-start;
+  margin: 10px 5px 10px 15px;
+}
+
+header nav {
+	float: right;
     width: 200px;
-    margin: 25px 5px 0px 5px; 
-    padding: 25px 10px 0 10px;
-    float: right;
+	margin: -180px 10px 10px 0px;
     text-align: right;
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
-nav ul {
+header nav ul {
     font-weight: bold;
     list-style: none;
 }
 
-nav ul li a {
+header nav ul li a {
     padding: 5px;
     color: Black;
     text-decoration: none;
     display:block;
 }
 
-nav ul li a:hover {
-    background: #40E0D0;
+header nav ul li a:hover {
+    background: #9FE2BF;
+    border-radius: 10px;
     color: white;
 }
-
-footer {
-    width: 1000px;
-    margin: 0;
-    padding: 10px;
-    background-color: #DAA520;
-    clear: both;
-    color: black;
-    font-weight: bold;
-    text-align:center;
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	overflow: hidden;
-}
-
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .calendar {
     height: 700px;
     width: 900px;
-	margin: 20px 50px 20px ;
+	margin: 20px 0px 20px 30px;
 	color: Black;
     border-radius: 40px;
 	outline-style: double;
@@ -128,12 +164,18 @@ body {font-family: Verdana, sans-serif;}
     font-weight: 500;
 	font-size: 1.5em;
 	outline-style: solid;
-	outline-width: 1px;
-	color: #DAA520;
+	outline-width: 2px;
+	outline-color: #DAA520;
+	color: black;
 }
 
 .calendar-week-day div {
-    display: grid;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	outline-style: solid;
+	outline-width: 2px;
+	outline-color: #DAA520;
 	
 }
 
@@ -142,7 +184,6 @@ body {font-family: Verdana, sans-serif;}
     grid-template-columns: repeat(7, 1fr);
     color: Black;
 	position: relative;
-		
 }
 	
 }
@@ -156,8 +197,6 @@ body {font-family: Verdana, sans-serif;}
     position: relative;
     cursor: pointer;
     animation: to-top 1s forwards;
-	
-	
 }
 
 .calendar-days div span {
@@ -325,4 +364,62 @@ body {font-family: Verdana, sans-serif;}
 
 .month-list > div > div:hover {
     background-color: var(--color-hover);
+}
+
+/* navigation for footer */
+footer a:link {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: gray;
+    background-color: grey;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 950px;
+    margin: 0;
+    padding: 10px;
+    background-color: #DAA520;
+    clear: both;
+	border-radius: 25px;
+}
+
+footer h1{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+	font-size: 1.25em;
+}
+
+footer p {
+	color: black;
+	font-size: 1em;
+}
+
+#wrapper {
+    width: 950px;
+    border-radius: 25px;
+}
+
+/* navigation for footer */
+footer a:link {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: gray;
+    background-color: grey;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

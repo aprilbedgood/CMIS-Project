@@ -1,46 +1,193 @@
 @charset "utf-8";
+/*
+   sample start file for final project - educational use only
+   
+   Author:   
+   Date:     
+   
+  
 
-#mission {
-    float: right;
-	margin: 75px 0px 0px 25px;
+*/
 
+* {
+    margin: 0; 
+    padding: 0;
 }
 
-#vission {
-    float: right;
-	margin-top: 10px;
+body {
+	height: auto;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
 }
 
-figure{
-    padding-top: 10px;
-    text-align: center;
-	float: center;
+#container {
+    width: 950px;
+    margin: 0 auto;
+    background-color: white;
 }
 
-figcaption {
-    font-style: italic;
-	color:#40E0D0;
+
+header {
+    width: 950px;
+	height: 220px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border: 5px dotted black;
+    border-radius: 25px;  	
 }
 
-h1{
-	font-family: Arial;
+header img {
+  width: 700px;
+  height: 200px;
+  object-fit: contain;
+  display:flex;
+  justify-content: flex-start;
+  margin: 10px 5px 10px 15px;
+}
+
+header nav {
+	float: right;
+    width: 200px;
+	margin: -180px 10px 10px 0px;
+    text-align: right;
+	font-size: 1.25em;
+}
+
+header nav ul {
+    font-weight: bold;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 5px;
+    color: Black;
+    text-decoration: none;
+    display:block;
+}
+
+header nav ul li a:hover {
+    background: #9FE2BF;
+    border-radius: 10px;
+    color: white;
+}
+
+#main {
+	width: 575px;
+	height: 700px;
+	background-color:white;
+	color: Black;
+	border-radius:15px;
+	border-style:double;
+	border-width:5px;
+	border-color: #5A9677;
+	margin-left: 20px;
+}
+
+#main h2 {
+	text-align: center;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-weight: 100;
 	font-size: 2em;
-	color:#40E0D0;
+	color: #DAA520;
+	margin-top: 25px;
+}
+#main p {
+	text-align: center;
+	font-size: 1.25em;
+	margin: 10px 35px 0px 35px;
+	color:#8DC9AA;
+}
+#main img {
+	margin: 10px 0px 2px 250px;
+	justify-content: space-evenly;
+	justify-items: center;
+	align-content: space-evenly;
+	align-items: center;
+}
+
+
+#events {
+    background:white;
+	float: right;
+	border-radius:15px;
+	outline-style:double;
+	outline-width:5px;
+	outline-color: #8DC9AA;
+	margin: -705px 0px 15px 0px;
+	width: 310px;
+	height: 700px;
 	text-align: center;
 }
 
-aside {
-	height: 450px;
-    width: 300px;
-    margin:0px 0px 0px 0px;
+#events h1 {
+	color: #DAA520;
+	margin-top:25px;
+	margin-bottom:10px;
+	text-align:center;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-weight: 100;
+	font-size: 2em;
+}
+
+#events p {
+	color: Black;
+	margin: 25px 5px 15px 30px;
+	text-align:left;
+	font-size: 1em;
+}
+
+#events figure{
+	margin: 60px 0px 30px 0px;
+	align-items: center;
+}
+
+#events figcaption {
+	font-style: italic;
+	color:#DAA520;
+	text-align:center;
+	font-size: 1em;
+}
+
+footer {
+    width: 950px;
+    margin: 0;
     padding: 10px;
-    float: left;
-	background-color: White;
+    background-color: #DAA520;
+    clear: both;
+	border-radius: 25px;
 }
 
-aside p {
-    font-style: italic;
-    font-size:1em;
-	text-align: center;
-	color:Black;
+footer h1{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+	font-size: 1.25em;
+}
+
+footer p {
+	color: black;
+	font-size: 1em;
+}
+
+#wrapper {
+    width: 950px;
+    margin-bottom: 10px;
+    border-radius: 25px;	
+}
+
+/* navigation for footer */
+footer a:link {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: gray;
+    background-color: grey;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

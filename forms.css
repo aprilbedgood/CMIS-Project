@@ -1,0 +1,53 @@
+# {
+	height: 1000px;
+}
+form#contacts {
+display: gird;
+}
+
+form#contacts > fieldset {
+	background-color: white;
+	border-radius: 20px;
+	-webkit-flex: 1 1 50px;
+	flex: 1 1 50px;
+	font-size: .85em;
+	padding: 10px;
+	margin: 10px;
+}
+
+div.formRow {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 7px 0px;
+
+}
+
+div.formRow > * {
+	-webkit-flex: 1 1 50px;
+	flex: 1 1 50px;
+}
+
+legend {
+	background-color: #DAA520;
+	color: white;
+	padding: 5px;
+}
+
+ textarea {
+	 margin-top:10 px;
+	 height: 100px;
+	 width: 95%;
+ }
+
+div#buttons {
+	text-align: center;
+	width: 100%;
+}
+ input[type='submit'], input [type='reset'] {
+	 font-size: 1.2em;
+	 padding: 5px;
+	 margin: 15px;
+ }
+ 
